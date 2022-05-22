@@ -1,9 +1,14 @@
 package com.harish.Tospringframework.game;
 
-public class SuperContraGame {
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+
+public class SuperContraGame implements GamingConsole {
 
     public void up(){
-        System.out.println("Up");
+        System.out.println("SuperContraGame Up");
     }
 
     public void down(){
